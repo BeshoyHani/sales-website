@@ -1,0 +1,91 @@
+body /* To control on the body , the background and the font */
+{
+    margin:  0;
+    padding: 0;
+    background:     url(abnb.jpg);
+    background-size:       cover;
+    background-position:  center;
+    font-family: sans-serif;      
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+
+
+
+.loginbox    /* The whole Login Box */
+{
+    width:  320px;  
+    height: 420px;
+    color:    #fff;
+    top:      50% ;
+    left:     50% ;
+    position:   absolute;
+    transform:  translate(-50%,-50%); /* transform is used in scaling of the box & translate to control on the position in x and y axis  */
+    box-sizing: border-box;  /*Here padding and border are included in the width and height */
+    padding: 70px; 
+    font-weight: bold;
+}
+
+.log /*The Image above the form*/
+{
+    width: 100px ; 
+    height: 100px;
+    border-radius: 50%;       /* To give The Picture rounded corners to be as a circle */
+    position:   absolute;     /*fixed or absolute , Both of them have The same effect here */
+    top: -10%;                /*To fix the position in y-axis*/
+    left: calc(50% - 50px);   /*To fix the position in x-axis */
+}
+
+h1  /* To edit string"Login Here" */
+{
+    margin: 0;
+    padding: 0 0 20px;
+    text-align: center; 
+    font-size: 22px;
+}
+
+
+    .loginbox input[type="text"], input[type="password"] 
+{
+     border: none; /* Not to put borders around The The Email and The password*/
+     border-bottom: 1px solid #fff; /* To put a line under the Email & password */
+     background: transparent ; /* To remove the default "white" background around mail & pass*/
+    /* outline: none ;*/
+     height: 40px ;
+     color: #fff;
+     font-size: 16px ;
+}
+
+.loginbox input[type="submit"] 
+{
+    border: none;
+    outline: none;
+    height: 30px ; 
+    width: 200px;
+    background: #f81e1e;
+    color: #fff; 
+    font-size: 18px ; 
+    border-radius: 20px ;
+}
+
+    .loginbox input[type="submit"]:hover /*It's used when a cursor is put on the Email , Password  or login*/
+    {
+        cursor: pointer;
+        background: #bfa0c8;
+        color: #000;
+    }
+
+.loginbox a /*some modifications to Forgot Your Password or sign up*/
+{
+    text-decoration: none;
+    font-size: 12px ;
+    line-height: 20px ;
+    color: darkgrey;
+
+}
+
+.loginbox a:hover /*It's used when a cursor is put on  Forgot Your Password or sign up*/
+{
+    color: #ffc107;
+}
