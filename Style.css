@@ -25,9 +25,19 @@ body /* To control on the body , the background and the font */
     box-sizing: border-box;  /*Here padding and border are included in the width and height */
     padding: 70px; 
     font-weight: bold;
+    //background: rgba(211,211,211,0.5) ;
 }
 
 .log /*The Image above the form*/
+{
+    width: 100px ; 
+    height: 100px;
+    border-radius: 50%;       /* To give The Picture rounded corners to be as a circle */
+    position:   absolute;     /*fixed or absolute , Both of them have The same effect here */
+    top: -10%;                /*To fix the position in y-axis*/
+    left: calc(50% - 50px);   /*To fix the position in x-axis */
+}
+.s /*The Image above the form*/
 {
     width: 100px ; 
     height: 100px;
@@ -72,8 +82,9 @@ h1  /* To edit string"Login Here" */
     .loginbox input[type="submit"]:hover /*It's used when a cursor is put on the Email , Password  or login*/
     {
         cursor: pointer;
-        background: #bfa0c8;
+        background: #f84949;
         color: #000;
+        
     }
 
 .loginbox a /*some modifications to Forgot Your Password or sign up*/
