@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html> 
+    <head>
+        
+        <meta charset="utf-8" />
+        
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        
+        <link href="../../css/productSlide.css" rel="stylesheet" type="text/css" />
+        
+    </head>
+ <body class="bodyBack">
+            
+     <header>
+         <p class="logo">Gamni</p>
+          <input type="image" class="searchBtn" src="../../img/search.png">
+         <input type="text" class="searchTb" placeholder="Search">
+     </header>
+        
+     <nav>
+         <ul>
+        <li> <a href="../../home.php" >Home</a></li>
+       <li> <a href="" >categories</a>
+        <ul >
+            <li><a href="../Mobile_HtML/all.html" >mobiles</a></li>
+            <li><a href="../Laptop_HtML/all laptops.html" >laptops</a></li>
+            <li><a href="../Camera_HtML/all%20CAMERAS.html" >cameras</a></li>
+            <li><a href="../Other_product_Html/other.html" >others</a></li>
+            </ul>
+        </li>
+        <li> <a href="" >my_account</a></li>
+        <li><a href="../../help/help.php" >help</a></li>
+            <li><a href="about.html" >About us</a></li>
+			 <li> <a href="admin.html" >Control_Site</a></li>
+                <li> <a href="../../logout.php" >Log out</a> </li></ul>
+     </nav>
+
+     
+     <fieldset id="dataControl">
+        <legend>Data control</legend>
+		
+		 <input type="text" placeholder="Id" id="itemId">
+         
+         <input type="text" placeholder="New item" id="itemName">
+         
+         <input type="text" id="itemType" placeholder="type">
+         
+         <input type="text" id="itemImg" placeholder="Image link">
+         
+         <input type="number" placeholder="Quantity" id="itemQuantity">
+         
+         <input type="number" placeholder="Price" id="itemPrice">
+         
+		 <input type="button" value="Add" id="addItem" onclick="addItemFunction()">
+         
+         <input type="button" value="Modify" id="modifyItem" onclick="modifyBtn()">
+         
+         <a href="requests.html"  id="requestListLink">View requests list</a>
+         <br>
+         
+         <br>
+         <textarea placeholder="item Description" id="itemDesc" rows="20" cols="111"></textarea>
+         
+     </fieldset>
+	
+	 
+     <div id="itemTable">
+        <table id="proTable">
+            <tr id="tableHead">
+				<td>Product ID</td>
+                <td>Product Name</td>
+                <td>Product Type</td>
+                <td>Quantity</td>
+                <td>Price $</td>
+             <!--   <td>Image link</td> -->
+                <td>Description</td>
+				<th class="tableButton">Delete</th>
+				<th class="tableButton">Modify</th>
+            </tr>
+        </table>
+     </div>
+	 
+     <script src="../../Admin_and_about_js/admin.js"></script>
+    </body>
+</html>
